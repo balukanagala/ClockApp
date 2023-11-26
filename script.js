@@ -16,8 +16,35 @@ function updateDate(){
     //console.log("Date:", DMY);
     document.getElementById("date").innerHTML = DMY;
 }
+function updateDay(){
+    var d=new Date();
+    var day = d.getDay();
+    switch(day){
+        case 0:
+            document.getElementById("day").innerHTML = "Sunday";
+            break;
+        case 1:
+            document.getElementById("day").innerHTML = "Monday";
+            break;
+        case 2:
+            document.getElementById("day").innerHTML = "Tuesday";
+            break;
+        case 3:
+            document.getElementById("day").innerHTML = "Wednesday";
+            break;
+        case 4:
+            document.getElementById("day").innerHTML = "Thursday";
+            break;
+        case 5:
+            document.getElementById("day").innerHTML = "Friday";
+            break;
+        default:
+            document.getElementById("day").innerHTML = "Saturday";
+    }
+}
 setInterval(updateClock,1000);
 setInterval(updateDate, 86400000);
 updateDate(); // Add this line to call the function immediately
+setInterval(updateDay,1000);
 //setInterval(updateDate,1000);
 // updateClock();

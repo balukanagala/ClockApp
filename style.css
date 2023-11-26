@@ -1,0 +1,41 @@
+*{
+    font-size: 40px;
+    font-family: 'Audiowide', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+#clock{
+    font-size: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.socials{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+footer{
+    color: black; 
+    position: fixed;     
+    text-align: center;    
+    bottom: 0px; 
+    width: 100%;
+}

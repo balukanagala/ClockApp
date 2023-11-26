@@ -65,8 +65,7 @@ body{
 footer{
     color: black; 
     font-weight: bolder;
-    position: fixed;     
-    text-align: center;    
+    position: fixed;
     bottom: 0px; 
     width: 100%;
 }

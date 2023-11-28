@@ -44,7 +44,23 @@ function updateDay(){
 }
 setInterval(updateClock,1000);
 setInterval(updateDate, 86400000);
-updateDate(); // Add this line to call the function immediately
-setInterval(updateDay,1000);
-//setInterval(updateDate,1000);
-// updateClock();
+updateDate();
+setInterval(updateDay,86400000);
+updateDay();
+/*
+If the clock function is called only once then it just displays the date but it will not update
+since clock has to be updated every second we call it for every 1000ms=1sec
+
+For date and day function has to be called for every 24hrs
+but (updateDate,86400000); is not working!
+Reason by chatGPT :
+It is possible that there might be a timing issue or a delay in the initial execution of the updateDate function when using the 24-hour interval.
+
+So we can call it for every sec as the clock function but it'll make our code unefficient!
+Efficient Code :
+setInterval(updateDate, 86400000);
+updateDate();
+setInterval(updateDay,86400000);
+updateDay();
+This way, the function is called once when the page loads, and then it updates every 24 hours. 
+*/
